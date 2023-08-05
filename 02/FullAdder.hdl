@@ -16,5 +16,5 @@ CHIP FullAdder {
     // Put you code here:
     HalfAdder(a=a, b=b, sum=tempsum, carry=tempcarry1);
     HalfAdder(a=tempsum, b=c, sum=sum, carry=tempcarry2);
-    HalfAdder(a=tempcarry1, b=tempcarry2, sum=out, carry=carry);
+    HalfAdder(a=tempcarry1, b=tempcarry2, sum=carry, carry=idontcare);
 }
